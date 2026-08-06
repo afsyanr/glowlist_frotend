@@ -79,7 +79,7 @@ export default function AddProduk() {
 
                 <div className="mb-3">
                     <label className="from-label">ID Kategori</label>
-                    <input
+                    <select
                       type="number"
                       name="id_kategori"
                       value={formData.id_kategori}
