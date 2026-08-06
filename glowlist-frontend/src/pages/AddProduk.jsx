@@ -32,7 +32,7 @@ export default function AddProduk() {
             }
         } catch (err) {
             console.error("Error:", err);
-            alert("Terjadi kesalahan saat menambah prpoduk");
+            alert("Terjadi kesalahan saat menambah produk");
         }
     };
 
@@ -86,7 +86,11 @@ export default function AddProduk() {
                       onChange={handleChange}
                       className="form-control"
                       placeholder="Masukkan ID kategori"
-                    />
+                    >
+                        <option value="">--Pilih Kategori--</option>
+                        <option  value="1">Sunscreen</option>
+                        <option value="4">Toner</option>
+                    </select>
                 </div>
 
                 <button type="submit" className="btn btn-success">

@@ -19,7 +19,7 @@ export default function App() {
       <Route path="produk" element={<Produk />} />
       <Route path="kategori" element={<Kategori />} />
       <Route path="tentang" element={<Tentang />} />
-      <Route path="addproduk" element={<AddProduk />} />
+      <Route path="produk/tambah" element={<AddProduk />} />
       </Route>
     </Routes>
     </BrowserRouter>
