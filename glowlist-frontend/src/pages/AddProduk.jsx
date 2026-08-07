@@ -21,7 +21,7 @@ export default function AddProduk() {
             const res = await fetch("http://localhost:3001/produk", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.strigify(formData),
+                body: JSON.stringify(formData),
             });
             if (res.ok) {
                 alert("Produk berhasil ditambahkan!");
@@ -69,7 +69,7 @@ export default function AddProduk() {
                     <input
                       type="number"
                       name="harga"
-                      value={formData}
+                      value={formData.harga}
                       onChange={handleChange}
                       className="form-control"
                       placeholder="Masukkan harga"
